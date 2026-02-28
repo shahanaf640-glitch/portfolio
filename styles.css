@@ -182,3 +182,18 @@ body{
     /* tighten about profile image */
     .about .profile-img{width:140px;height:140px}
 }
+
+/* Aggressive compaction for very small devices */
+@media (max-width:360px){
+    .site-header{padding:0;border-bottom:1px solid rgba(255,255,255,.02)}
+    .nav{padding:.08rem 0;align-items:center}
+    .brand{font-size:0.88rem}
+    .nav-links{gap:.2rem}
+    .nav-links a{padding:.25rem 0;font-size:0.9rem}
+    .nav-links a:hover{color:var(--accent)}
+    .container{padding:0.5rem}
+    .hero{padding:.9rem 0}
+    .hero-content h1{font-size:1.15rem;line-height:1.25}
+    .hero-content p{max-width:40ch;font-size:0.95rem}
+    .about .profile-img{width:120px;height:120px}
+}
