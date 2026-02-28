@@ -166,3 +166,19 @@ body{
     .hero-content h1{font-size:1.4rem}
     .hero-content p{max-width:46ch}
 }
+
+/* Further compact header/navigation for small mobile devices */
+@media (max-width:420px){
+    .site-header{background:linear-gradient(180deg,rgba(2,6,23,.95),rgba(2,6,23,.95));border-bottom:1px solid rgba(255,255,255,.03)}
+    .nav{padding:.15rem 0;gap:.5rem}
+    .brand{font-size:0.95rem}
+    .nav-links{gap:.4rem}
+    .nav-links a{padding:.35rem 0;font-size:.95rem;color:var(--muted)}
+    .nav-links a.active{font-weight:600}
+    .container{padding:.6rem}
+    /* reduce hero spacing so heading stays visible below sticky header */
+    .hero{padding:1.1rem 0}
+    .hero-content h1{font-size:1.25rem}
+    /* tighten about profile image */
+    .about .profile-img{width:140px;height:140px}
+}
